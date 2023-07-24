@@ -227,14 +227,19 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #0d1e68 url("images/bg.jpg") bottom left;
-		object-fit: fill;
-		background-position: center;
-		background-size: fill;
-		background-repeat: repeat-x;
+		background: #0d1e68 url("images/bg.jpg") center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+		object-fit: cover;
+		background-position: cover;
+		background-size: cover;
+		background-repeat: repeat;
 		height: 100%;
 		opacity: 1;
 		position: relative;
+		top: 0;
 	}
 
 	@-moz-keyframes bg {
