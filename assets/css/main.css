@@ -213,33 +213,20 @@ input, select, textarea {
 /* BG */
 
 	#bg {
-		-moz-animation: bg 60s linear infinite;
-		-webkit-animation: bg 60s linear infinite;
-		-ms-animation: bg 60s linear infinite;
-		animation: bg 60s linear infinite;
-		-moz-backface-visibility: hidden;
-		-webkit-backface-visibility: hidden;
-		-ms-backface-visibility: hidden;
-		backface-visibility: hidden;
-		-moz-transform: translate3d(0,0,0);
-		-webkit-transform: translate3d(0,0,0);
-		-ms-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
-	/* Set your background with this */
-
-		background: #0d1e68 url("images/bg.jpg") center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
+		/* Responsive full-viewport background */
+		background-color: #0d1e68;
+		background-image: url("images/bg.jpg");
+		background-position: center center;
+		background-repeat: no-repeat;
 		background-size: cover;
-		object-fit: cover;
-		background-position: cover;
-		background-size: cover;
-		background-repeat: repeat;
-		height: 100%;
+		background-attachment: fixed;
+		height: 100vh;
+		width: 100%;
 		opacity: 1;
-		position: relative;
+		position: fixed;
 		top: 0;
+		left: 0;
+		z-index: -1;
 	}
 
 	@-moz-keyframes bg {
@@ -307,8 +294,8 @@ input, select, textarea {
 	}
 
 	#bg {
-		background-size: 2250px auto;
-		width: 6750px;
+		background-size: cover;
+		width: 100%;
 	}
 
 /* Overlay */
@@ -811,8 +798,8 @@ input, select, textarea {
 		}
 
 		#bg {
-			background-size: 1500px auto;
-			width: 4500px;
+			background-size: cover;
+			width: 100%;
 		} }
 
 /* Normal */
@@ -893,8 +880,8 @@ input, select, textarea {
 		}
 
 		#bg {
-			background-size: 750px auto;
-			width: 2250px;
+			background-size: cover;
+			width: 100%;
 		} }
 
 /* Mobile */
@@ -979,8 +966,8 @@ input, select, textarea {
 		}
 
 		#bg {
-			background-size: 300px auto;
-			width: 900px;
+			background-size: cover;
+			width: 100%;
 		}
 
 	/* Header */
@@ -1077,8 +1064,8 @@ input, select, textarea {
 		}
 
 		#bg {
-			background-size: 412.5px auto;
-			width: 1237.5px;
+			background-size: cover;
+			width: 100%;
 		}
 
 	/* Header */
